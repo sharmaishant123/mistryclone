@@ -1,0 +1,1477 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.fs-40 {
+  font-size: 40px
+}
+
+.fs-35 {
+  font-size: 35px
+}
+
+.fs-32 {
+  font-size: 32px
+}
+
+.fs-30 {
+  font-size: 30px
+}
+
+.fs-36 {
+  font-size: 36px
+}
+
+.fs-28 {
+  font-size: 28px
+}
+
+.fs-26 {
+  font-size: 26px
+}
+
+.fs-24 {
+  font-size: 24px
+}
+
+.fs-23 {
+  font-size: 23px
+}
+
+.fs-22 {
+  font-size: 22px
+}
+
+.fs-21 {
+  font-size: 21px
+}
+
+.fs-20 {
+  font-size: 20px
+}
+
+.fs-19 {
+  font-size: 19px
+}
+
+.fs-18 {
+  font-size: 18px
+}
+
+.fs-17 {
+  font-size: 17px
+}
+
+.fs-16 {
+  font-size: 16px
+}
+
+.fs-15 {
+  font-size: 15px
+}
+
+.fs-14 {
+  font-size: 14px
+}
+
+.fs-13 {
+  font-size: 13px
+}
+
+.fs-12 {
+  font-size: 12px
+}
+
+.fs-11 {
+  font-size: 11px
+}
+
+.fs-10 {
+  font-size: 10px
+}
+
+.fs-9 {
+  font-size: 9px
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.lh-26 {
+  line-height: 26px;
+}
+
+.lh-30 {
+  line-height: 30px;
+}
+
+.lh-32 {
+  line-height: 32px;
+}
+
+.lh-38 {
+  line-height: 38px;
+}
+
+.lh-40 {
+  line-height: 40px;
+}
+
+.lh-50 {
+  line-height: 50px;
+}
+
+
+:root {
+  -bg-white: #fff;
+  --bg-primary: #e73540;
+  --bg-blue: #1d9dd1;
+  --bg-dark-blue: #002f6c;
+  --color-primary: #e73540;
+  --color-green: #05bc6f;
+  --color-black: #000;
+  --color-light-black: #333;
+  --color-dark: #0e0e0e;
+  --color-cms: #44382e;
+  --color-medium: rgba(0, 0, 0, .6);
+  --color-medium-two: rgba(51, 51, 51, .6);
+  --color-text: rgba(68, 56, 46, .6);
+  --color-midium-gray: hsla(0, 0%, 40%, .6);
+  --color-light-gray: #414141;
+  --color-light: #7b7b7b;
+  --color-white: #fff;
+  --color-blue: #1d9dd1;
+  --color-gold: #cda42e;
+  --color-light-gold: #f19920;
+  --color-dark-blue: #002f6c;
+  --color-input: #111;
+  --color-gray: #666;
+  --label-color-1: #72777a;
+  --label-color-2: #191919;
+  --label-color-3: #c7c9ca;
+  --label-color-4: #c2aea9;
+  --input-border: #e8e8e8;
+  --primary-border: #e73540;
+  --focus-border: #17a8e3;
+}
+
+.label-color-2 {
+  color: var(--label-color-2);
+}
+
+
+.primary-button {
+  height: 45px;
+  border: 1px solid var(--primary-border);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .16);
+  transition: all .2s;
+  background-color: var(--bg-primary);
+  color: var(--color-white);
+  font-size: 15px;
+  padding: 0 1.25rem;
+  border-radius: 8px;
+}
+
+.primary-button:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.primary-button:disabled {
+  background-color: #f0858c;
+  border-color: #f0858c;
+  color: #f7fafc;
+  cursor: not-allowed;
+}
+
+
+.mistryHeader {
+  transition: all .3s ease-in-out;
+  top: -111px
+}
+
+.mistryHeader.header-sticky {
+  z-index: 50;
+  top: 0 !important;
+  transition: all .5s ease-in-out;
+  box-shadow: 0 5px 40px rgba(179, 188, 195, .2);
+}
+
+.mistryHeader .main-logo {
+  width: 175px;
+}
+
+.mistryHeader .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.mistryHeader .nav-item .nav-link {
+  color: var(--color-light);
+  font-weight: 500;
+  font-size: 13px;
+  transition: all .2s;
+  margin: 0 .5rem;
+}
+
+.mistryHeader .nav-item .nav-link.active,
+.mistryHeader .nav-item .nav-link:hover {
+  color: var(--color-primary);
+}
+
+.mistryHeader .navbar-expand-lg .navbar-nav .dropdown-menu {
+  position: absolute;
+  right: 0;
+  left: unset;
+}
+
+.search-bar-box {
+  max-width: 400px !important;
+  padding-left: 15px;
+  padding-right: 5px;
+  border-radius: 8px;
+}
+
+.search-bar-box .search-menu {
+  width: 100%;
+  background: #f1f1f1 !important;
+  z-index: 101;
+  border: 1px solid rgba(0, 0, 0, .1) !important;
+  border-radius: 0 0 8px 8px !important;
+  display: none;
+}
+
+.search-bar-box .search-menu img {
+  height: 48px !important;
+}
+
+.search-bar-box input {
+  background: #f1f1f1 !important;
+  height: 48px !important;
+  border-radius: 8px !important;
+  border: 1px solid transparent !important;
+  border-bottom: 0 !important;
+  font-size: 16px !important;
+}
+
+.search-bar-box input::-moz-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  color: #191919;
+}
+
+.search-bar-box input:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  color: #191919;
+}
+
+.search-bar-box input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  color: #191919;
+}
+
+/* .search-bar-box input::-webkit-search-cancel-button {
+  height: 48px;
+  width: 32px;
+  background: url(/images/home/cross-icon.svg) 50% no-repeat!important;
+  background-size: 32px
+} */
+
+.search-bar-box input.is-searched {
+  border-color: rgba(0, 0, 0, .1) !important;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.search-bar-box .input-search:before {
+  height: 48px !important;
+  background-size: 25px !important;
+}
+
+.search-bar-box .catalogs-search-list {
+  top: 48px !important;
+  background: #f1f1f1 !important;
+  box-shadow: none !important;
+  border: 1px solid rgba(0, 0, 0, .1) !important;
+  border-radius: 0 0 8px 8px !important;
+}
+
+.search-bar-box .cross-icon {
+  right: 7.5px !important;
+  z-index: 8;
+  top: 12.5px !important;
+}
+
+.mistry-store-works {
+  bottom: -20px;
+  right: -55px;
+  z-index: 1;
+}
+
+.catalogs-search .catalogs-search-input {
+  width: 780px;
+  max-width: 100%;
+}
+
+.catalogs-search .catalogs-search-input img {
+  cursor: pointer;
+  right: 0;
+  z-index: 8;
+}
+
+.catalogs-search .catalogs-search-input input {
+  outline: 0 !important;
+  padding-left: 3.5rem;
+  padding-right: 1rem;
+  transition: width .3s;
+  border: 0;
+  height: 50px;
+}
+
+
+
+.catalogs-search .catalogs-search-input .input-search {
+  border-radius: 6px;
+}
+
+.catalogs-search .catalogs-search-input .input-search:before {
+  position: absolute;
+  left: 10px;
+  content: "";
+  width: 40px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://mistry.store/images/search-icon.svg') 50% no-repeat;
+  background-size: 32px;
+  top: 0;
+}
+
+.catalogs-search .catalogs-search-input .catalogs-search-list {
+  top: 55px;
+  z-index: 99;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .149);
+  border-radius: 6px;
+  z-index: 10;
+}
+
+.catalogs-search .catalogs-search-input .catalogs-search-list .h4,
+.catalogs-search .catalogs-search-input .catalogs-search-list h4 {
+  letter-spacing: 1.96px;
+}
+
+.catalogs-search .catalogs-search-input .catalogs-search-list a {
+  border-bottom: 1px solid var(--input-border);
+  transition: all .2s;
+}
+
+.catalogs-search .catalogs-search-input .catalogs-search-list a:hover {
+  color: var(--color-primary) !important;
+}
+
+.catalogs-search .catalogs-search-input .catalogs-search-list ul {
+  height: auto;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.catalogs-search .catalogs-search-input .catalogs-search-list ul li:last-child a {
+  border: 0;
+}
+
+.catalog-inner .catalogs-search .catalogs-search-input input {
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+}
+
+/* .catalogs-category-section {
+  padding: 50px 0;
+  background: url(/images/banner-web-category.jpg) no-repeat 50%;
+  background-size: cover;
+  opacity: 1
+} */
+
+.catalogs-category-section .h1,
+.catalogs-category-section h1 {
+  letter-spacing: 1.28px;
+}
+
+.catalogs-category-section .h3,
+.catalogs-category-section h3 {
+  letter-spacing: 3.6px;
+}
+
+.show {
+  display: block;
+}
+
+@media(max-width: 992px) {
+  .header-strip {
+    top: 61px !important;
+    position: sticky;
+  }
+
+  .header-strip p {
+    font-size: 13px;
+  }
+
+  .header-strip img {
+    width: 35px;
+  }
+
+  .header-strip a {
+    margin-left: auto;
+    padding: 0 !important;
+  }
+
+  .header-strip a img {
+    width: 22px;
+  }
+
+  .language-dropdown .dropdown-toggle {
+    min-width: 45px;
+    color: var(--color-light) !important;
+  }
+
+  .language-dropdown .dropdown-menu {
+    top: unset !important;
+    bottom: -8px !important;
+  }
+
+  .mistryHeader {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .mistryHeader .main-logo {
+    width: 128px;
+  }
+
+  .mobile-menu {
+    width: 300px !important;
+    height: calc(100vh - 61px);
+    transition: .3s !important;
+    left: -100%;
+    top: 56px;
+    background-color: #fff !important;
+    z-index: 1002;
+  }
+
+  .mobile-menu.navbar-collapse {
+    left: 0;
+  }
+
+  .mobile-menu .nav,
+  .mobile-menu .nav-item {
+    display: block;
+  }
+
+  .menu-overlay {
+    height: calc(100vh - 61px);
+    width: 100%;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 56;
+    background: rgba(0, 0, 0, .4);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
+  .login-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 7rem;
+  }
+}
+
+
+.home-stories .story-list-item {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-stories .story-list-item.unread {
+  background: linear-gradient(225deg, #8a3bee, #f200b7 39%, #fe9402 91.67%);
+}
+
+.home-stories .story-list-item.read {
+  background: #d9d9d9;
+}
+
+.home-stories .story-list-item .story-image {
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ms-story-slider .slick-next,
+.ms-story-slider .slick-prev {
+  top: 38% !important;
+}
+
+.home-stories-feed {
+  background: rgba(0, 0, 0, .5);
+  z-index: 1000;
+}
+
+.home-stories-feed div,
+.home-stories-feed img,
+.home-stories-feed span {
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.home-stories-feed img {
+  border: 0 !important;
+}
+
+
+.home-stories-feed {
+  background: rgba(0, 0, 0, .5);
+  z-index: 1000;
+}
+
+.home-stories-feed div,
+.home-stories-feed img,
+.home-stories-feed span {
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.home-stories-feed img {
+  border: 0 !important;
+}
+
+
+
+.label-color-1 {
+  color: var(--label-color-1);
+}
+
+.label-color-2 {
+  color: var(--label-color-2);
+}
+
+.label-color-3 {
+  color: var(--label-color-3);
+}
+
+.label-color-4 {
+  color: var(--label-color-4);
+}
+
+
+.brand-partner {
+  border-radius: 8px;
+  background: #f8f8f8;
+  border: 1px solid #f2f3f7;
+  min-height: 220px;
+  min-width: 230px;
+  max-width: 230px;
+}
+
+.brand-partner .b-image,
+.brand-partner .b-image img {
+  min-height: 40px;
+  max-height: 40px;
+}
+
+.brand-partner .b-image img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.inner-partners .brand-partner {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+@media(max-width: 991px) {
+  .brand-partner {
+    min-width: 180px;
+    max-width: 180px;
+  }
+}
+
+
+.brand-partners-box {
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, .06);
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 16px;
+}
+
+.brand-partners-box .slick-dots {
+  position: unset;
+}
+
+.home-offer-card {
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .06);
+  border-radius: 16px;
+}
+
+.home-offer-card .offer-icon-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://mistry.store/images/offer-frame.png') no-repeat 50%;
+  min-width: 64px;
+  min-height: 64px;
+  border-radius: 12px 0 0 12px;
+}
+
+.home-offer-card .offer-icon-home img {
+  max-height: 48px;
+}
+
+
+.home-marquee {
+  background-color: #ffea00;
+}
+
+.home-marquee .marquee-tag {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.home-marquee .inner-marquee p {
+  font-size: 15px;
+  cursor: default;
+}
+
+.home-marquee .marquee-tag .inner-marquee {
+  display: inline-block;
+  margin: 0;
+  animation: marquee 14s linear infinite;
+}
+
+.home-marquee .marquee-tag .inner-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%)
+  }
+
+  to {
+    transform: translateX(-100%)
+  }
+}
+
+.requirements-box {
+  background: linear-gradient(85.45deg, #e6eefd 3.69%, #fff 96.31%);
+  border: 1px solid #f2f3f7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  border-radius: 32px;
+}
+
+.works-mistry-section {
+  background: linear-gradient(150.74deg, #faf3e9 49.09%, #eceefd 96.67%);
+}
+
+.building-section {
+  padding-top: 60px !important;
+}
+
+.building-section .building-content p {
+  line-height: 1.8;
+}
+
+.building-section .building-box {
+  background: #fff;
+  box-shadow: 0 0 23.2841px rgba(0, 0, 0, .06);
+  border-radius: 33.529px;
+  min-width: 230px;
+  max-width: 230px;
+  min-height: 230px;
+}
+
+.building-section .building-box p {
+  line-height: 24px;
+}
+
+.building-section .videos-section .video-box {
+  position: relative;
+  z-index: 2;
+  min-height: 424px;
+}
+
+.building-section .videos-section .video-box {
+  position: relative;
+  z-index: 2;
+  min-height: 424px;
+}
+
+.videos-section .video-box {
+  box-shadow: inset 0 0 35px #000;
+  background: url("https://mistry.store/images/yt-thumb-1.webp") no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  border-radius: 16px;
+}
+
+.videos-section .video-box .watch-yt-btn {
+  display: block;
+  padding: 8px 16px;
+  color: #fff;
+  font-weight: 600;
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+  bottom: 1rem;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, .7);
+  text-decoration: none;
+}
+
+.videos-section .video-box .watch-yt-btn img {
+  height: 50px;
+}
+
+.videos-section .video-box-bottom {
+  background-size: cover;
+  min-height: 340px;
+}
+
+.videos-section .yt-play-video {
+  top: 45%;
+  z-index: 9;
+}
+
+.refer-ad-box {
+  background: linear-gradient(85.45deg, #f7fde6 3.69%, #fff 96.31%);
+  border: 1px solid #f2f3f7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  border-radius: 32px;
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.register-section {
+  background: var(--bg-dark-blue);
+}
+
+.register-section .price-tag {
+  font-size: 48px;
+}
+
+.register-section {
+  background-image: url("https://mistry.store/images/home/benefits-bg.png"), url("https://mistry.store/images/home/benefits-bg-1.png");
+  background-position: top 21% left 2%, top 43% right 9%;
+  background-repeat: no-repeat;
+}
+
+.register-section .pro-benefits-box {
+  width: 180px;
+  height: 180px;
+  border-radius: 18px;
+  background: #fff5f5;
+}
+
+.register-section .red-dot-bg {
+  background-image: url("https://mistry.store/images/home/red-dot-grid.png");
+  background-position: bottom 0 right 88%;
+  background-repeat: no-repeat;
+}
+
+.benifits-row {
+  max-width: 405px;
+}
+
+.p-60 {
+  padding: 60px 0;
+}
+
+.trusted-box .trusted-nav {
+  overflow-x: auto;
+}
+
+.trusted-box .trusted-nav ul li a {
+  border: 1.5px solid hsla(203, 3%, 46%, .6) !important;
+  border-radius: 83.3333px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  height: 45px;
+  transition: all .2s;
+  white-space: nowrap;
+}
+
+.trusted-box .trusted-nav ul li a.active,
+.trusted-box .trusted-nav ul li a:hover {
+  color: #fff;
+  background-color: var(--bg-primary) !important;
+  border-color: var(--bg-primary) !important;
+}
+
+.trusted-box .trusted-brands-container {
+  background: #fff;
+  border: 1px solid #f2f3f7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .06);
+  border-radius: 16px;
+  padding: 15px 15px 0;
+}
+
+.trusted-box .trusted-brands-container .trusted-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.trusted-box .trusted-brands-container .trusted-nav ul li a.active,
+.trusted-box .trusted-brands-container .trusted-nav ul li a:hover {
+  color: #fff;
+  background-color: #191919 !important;
+  border-color: #191919 !important;
+}
+
+.trusted-box .trusted-brands-container .trusted-brand-item {
+  background: #f8f8f8;
+  border: 1px solid #f2f3f7;
+  border-radius: 16px;
+  width: 120px;
+  height: 120px;
+  margin-right: 24px !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.color-dark {
+  color: var(--color-dark);
+}
+
+.color-cms {
+  color: var(--color-cms);
+}
+
+.color-medium {
+  color: var(--color-medium);
+}
+
+.color-medium-two {
+  color: var(--color-medium-two);
+}
+
+.color-light {
+  color: var(--color-light);
+}
+
+.color-blue {
+  color: var(--color-blue);
+}
+
+.color-gold {
+  color: var(--color-gold);
+}
+
+.color-light-gold {
+  color: var(--color-light-gold);
+}
+
+.color-green {
+  color: var(--color-green);
+}
+
+.color-dark-blue {
+  color: var(--color-dark-blue);
+}
+
+.color-input {
+  color: var(--color-input);
+}
+
+.color-gray {
+  color: var(--color-gray);
+}
+
+.color-light-gray {
+  color: var(--color-light-gray);
+}
+
+.color-black {
+  color: var(--color-black);
+}
+
+.color-light-black {
+  color: var(--color-light-black);
+}
+
+.color-text {
+  color: var(--color-text);
+}
+
+.color-midium-gray {
+  color: var(--color-midium-gray);
+}
+
+
+.flash-deals-box .gray-bg {
+  top: -60px;
+  left: -67px;
+}
+
+.growing-community-section {
+  background-image: url("https://mistry.store/images/home/community-bg.png");
+  background-size: 112px 175px;
+  background-repeat: no-repeat;
+  background-position: bottom 120px right 4px;
+}
+
+.professionals-row {
+  max-width: 970px;
+}
+
+.professionals-box {
+  max-width: 210px !important;
+}
+
+.professionals-box img {
+  min-height: 230px;
+  border-radius: 10px;
+  transition: all .4s;
+}
+
+.professionals-box .h3,
+.professionals-box h3 {
+  transition: all .2s;
+}
+
+.professionals-box:hover .h3,
+.professionals-box:hover h3 {
+  color: var(--color-primary);
+}
+
+.professionals-box:hover img {
+  transform: scale(1.1);
+}
+
+.download-section {
+  background: #f3f3f3;
+}
+
+.professional-section .card {
+  border-radius: 20px !important;
+}
+
+.professional-section .card .play-image-box {
+  border-radius: 10px !important;
+}
+
+.play-image-box {
+  min-height: 160px;
+  max-height: 160px;
+  overflow: hidden;
+  border-radius: .375rem;
+  text-align: center;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
+}
+
+.professional-section {
+  background-image: url("https://mistry.store/images/home/professnole-bg-01.png"), url("https://mistry.store/images/home/professnole-bg-02.png");
+  background-position: 0 0, 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #ef3340;
+}
+
+.color-light-white {
+  color: hsla(0, 0%, 100%, .8);
+}
+
+.industry-section {
+  background: #f3f3f3;
+}
+
+.industry-section .card {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1) !important;
+  border-radius: 8px;
+}
+
+.inds-news-img {
+  max-height: 150px !important;
+  max-width: 100% !important;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.footer-contact-box {
+  bottom: -224px;
+  background-image: url("https://mistry.store/_next/static/media/footer-bg-left.13e3db03.png"), url("https://mistry.store/_next/static/media/footer-bg-right.a0d0fd78.png");
+  background-position: bottom -32px left -20px, top -51px right -1px;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  padding: 40px 69px;
+}
+
+.footer-contact ul li a {
+  color: var(--label-color-2) !important;
+}
+
+.bg-dark-blue {
+  background-color: var(--bg-dark-blue) !important;
+}
+
+.website-footer {
+  background: #f3f3f3;
+  padding-top: 50px;
+}
+
+.website-footer.home-footer {
+  padding-top: 150px;
+  margin-top: 100px;
+}
+
+.website-footer .footer-logo {
+  width: 250px;
+}
+
+.website-footer .useful-links li {
+  position: relative;
+}
+
+.website-footer .useful-links li a {
+  transition: all .2s;
+}
+
+.website-footer .useful-links li a:hover {
+  color: var(--color-primary) !important;
+}
+
+.website-footer .social-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: all .2s;
+}
+
+.website-footer .social-icon svg {
+  width: 18px;
+}
+
+.website-footer .social-icon:hover {
+  background: #fff;
+}
+
+
+
+.image-preview {
+  background: hsla(0, 0%, 100%, .7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2000;
+  /* top: 0; */
+  left: 0;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 95vh;
+}
+
+.image-preview .pdf-icon svg {
+  font-size: 80px;
+}
+
+.offer-modal .offer-modal-box {
+  border-radius: 24px;
+}
+
+.offer-modal .offer-modal-box .py-3.border-bottom img {
+  max-width: 48px;
+}
+
+.offer-modal .offer-modal-box .py-3.border-bottom .h6,.offer-modal .offer-modal-box .py-3.border-bottom h6 {
+  overflow: hidden;
+}
+
+.offer-modal .offer-modal-box ul li svg {
+  max-width: 14px!important;
+}
+
+.offer-modal .offers-close {
+  top: -14px;
+  right: -14px;
+  z-index: 9;
+}
+
+.blur-backdrop {
+  background: rgba(0,0,0,.4) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  opacity: 1!important;
+  height: 100%;
+}
+
+.modal-backdrop {
+  --bs-backdrop-zindex: 1050;
+  --bs-backdrop-bg: #000;
+  --bs-backdrop-opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--bs-backdrop-zindex);
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bs-backdrop-bg);
+}
+
+.login-modal .modal-body {
+  padding: 1.5rem 2rem 4rem;
+  border-radius: 20px;
+  background: url("https://mistry.store/images/login-bg.png") no-repeat 100% 100%;
+  background-color: var(--bg-white);
+}
+
+.login-modal .modal-body .h2,.login-modal .modal-body h2 {
+  font-size: 45px;
+}
+
+.login-modal .modal-body .login-detail-box {
+  background: url("https://mistry.store/images/login-box-bg.png") no-repeat;
+  background-size: cover;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16);
+  min-height: 540px;
+  padding: 2rem;
+}
+
+.login-input {
+  height: 48px;
+  font-size: 15px;
+  color: var(--color-input);
+  border: 1px solid var(--input-border);
+  outline: 0;
+  background-color: --bg-white;
+  border-radius: 0;
+  box-shadow: none!important;
+}
+
+.login-input:focus {
+  border-color: var(--focus-border);
+}
+
+.login-input.readonly-input {
+  border-color: var(--input-border);
+}
+
+.login-input::-webkit-inner-spin-button,.login-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.login-input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+.login-input[type=file]::file-selector-button {
+  display: none;
+}
+
+.login-mobile-input {
+  position: relative;
+  padding-left: 70px;
+  background-color: var(--bg-white);
+  border: 1px solid var(--input-border);
+}
+
+.login-mobile-input:focus-within {
+  border-color: var(--focus-border);
+}
+
+.login-mobile-input input {
+  border: 0;
+}
+
+.login-mobile-input:before {
+  position: absolute;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 48px;
+  border-right: 1px solid var(--input-border);
+  content: "+91";
+  color: var(--color-dark);
+  left: 0;
+  font-size: 15px;
+  top: 0;
+}
+
+.otp-inputs input {
+  border: 1px solid #e6e7ea;
+  box-shadow: none;
+  border-radius: 0;
+  margin: 0 8px!important;
+  width: 55px!important;
+  height: 60px!important;
+  outline-color: var(--focus-border)!important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: var(--color-input);
+  font-size: 26px;
+  font-weight: 500;
+}
+
+
+
+.video-index {
+  z-index: 1060;
+}
+
+.video-modal-index {
+  z-index: 1070;
+}
+
+
+.about-section {
+  padding: 60px 0;
+  background: url("https://mistry.store/images/section-bg.webp") 100% no-repeat;
+  background-size: 80%
+}
+
+.about-us-banner img {
+  width: 400px;
+}
+
+.about-us-banner .h1,.about-us-banner h1 {
+  font-size: 50px;
+  line-height: 75px;
+}
+
+.about-material img {
+  height: 384px;
+}
+
+.bridge-section {
+  padding: 60px 0;
+}
+
+.bridge-section img {
+  height: 576px;
+}
+
+.about-store-section .h2,.about-store-section h2,.bridge-section .h2,.bridge-section h2 {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px dashed #ccc;
+}
+
+.about-store-section img {
+  width: 268px;
+}
+
+.founders-section {
+  padding: 40px 0;
+}
+
+.founders-section img {
+  width: 230px;
+}
+
+.about-partner .go-to-partner {
+  border: 2px solid var(--bg-primary);
+  width: 4rem;
+  height: 4rem;
+  transition: all .2s;
+}
+
+.about-partner .go-to-partner:hover {
+  color: #fff;
+  background-color: var(--bg-primary);
+}
+
+@media(max-width: 991px) {
+  .about-section {
+      padding:25px 0;
+  }
+
+  .about-us-banner img {
+      width: 250px;
+      margin: auto;
+  }
+
+  .about-us-banner .h1,.about-us-banner h1 {
+      font-size: 28px;
+      line-height: 43px;
+      text-align: center;
+      margin-top: 1rem;
+  }
+
+  .about-us-banner a {
+      margin: 1rem auto 0;
+  }
+
+  .about-material {
+      text-align: center;
+  }
+
+  .about-material .row {
+      flex-direction: column-reverse;
+  }
+
+  .about-material img {
+      height: auto;
+      margin: 0 auto 1rem;
+  }
+
+  .about-material p {
+      font-size: 15px;
+      line-height: 25px;
+  }
+
+  .bridge-section {
+      padding: 20px 0;
+      text-align: center;
+  }
+
+  .bridge-section img {
+      height: auto;
+  }
+
+  .bridge-section .h2,.bridge-section h2 {
+      font-size: 24px;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+  }
+
+  .bridge-section p {
+      font-size: 15px;
+      line-height: 25px;
+  }
+
+  .about-store-section {
+      text-align: center;
+  }
+
+  .about-store-section .h2,.about-store-section h2 {
+      font-size: 24px;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+  }
+
+  .about-store-section .h3,.about-store-section h3 {
+      font-size: 24px;
+  }
+
+  .about-store-section img {
+      width: auto;
+  }
+
+  .about-store-section p {
+      font-size: 15px;
+      line-height: 25px;
+  }
+
+  .about-store-section a {
+      margin-top: 1rem;
+  }
+
+  .founders-section {
+      padding: 30px 0;
+  }
+
+  .founders-section .h2,.founders-section h2 {
+      font-size: 24px;
+  }
+
+  .founders-section .h3,.founders-section h3 {
+      font-size: 20px;
+  }
+
+  .founders-section img {
+      margin: 0 auto;
+  }
+
+  .founders-section p {
+      font-size: 15px;
+      line-height: 25px;
+  }
+
+  .about-partner {
+      padding-top: 0;
+      text-align: center;
+  }
+
+  .about-partner span {
+      font-size: 15px;
+  }
+
+  .about-partner .h2,.about-partner h2 {
+      font-size: 24px;
+      line-height: 35px;
+  }
+
+  .about-partner .h2 span,.about-partner h2 span {
+      font-size: 24px;
+  }
+
+  .about-partner .go-to-partner {
+      width: 3rem;
+      height: 3rem;
+      margin: 10px auto 0;
+  }
+
+  .about-partner .go-to-partner svg {
+      width: 15px;
+  }
+}
